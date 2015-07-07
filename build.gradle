@@ -27,7 +27,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.social:spring-social-facebook:2.0.1.RELEASE")
+    compile("org.springframework.social:spring-social-facebook")
     compile("com.fasterxml.jackson.core:jackson-core")
     compile("org.springframework.security:spring-security-crypto:4.0.1.RELEASE")
     testCompile("junit:junit")
