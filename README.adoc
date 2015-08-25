@@ -101,3 +101,6 @@ Congratulations! You have registered an application with Facebook.
 
 This is the first step in developing an application that is integrated into its users' social graph.
 
+
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+
