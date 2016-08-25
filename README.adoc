@@ -53,6 +53,8 @@ You can name your application almost anything, although Facebook does apply a fe
 
 You are asked to supply an App Namespace, which is optional. If you supply one, you can later use the App Namespace to define custom Open Graph actions and as part of the application's Facebook URL (http://apps.facebook.com/{App_Namespace}). Make sure the App Namespace is longer than 7 characters, contains no capital letters, and is unique among all applications on Facebook. Although it's not required, it's also probably a good idea to provide a namespace that is similar to the name you gave to your application.
 
+The app domain is also optional. It's safest to leave it blank for testing.
+
 Optionally, you can have Facebook automatically arrange hosting for your application at Heroku.
 
 After you click Continue, Facebook performs a Captcha check to verify that you're not setting up applications through an automated process.
