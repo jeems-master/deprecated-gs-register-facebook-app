@@ -43,7 +43,7 @@ image::images/fb-congrats.png[]
 After you register as a Facebook developer, you can register a new application.
 
 == Register a new application
-From http://developer.facebook.com, click on Apps at the top of the page to go to the application dashboard. The dashboard shows a list of applications that the developer has created. You haven't created any applications yet, so the list is empty. 
+From http://developer.facebook.com, click on "My Apps" at the top of the page to go to the application dashboard. The dashboard shows a list of applications that the developer has created. You haven't created any applications yet, so the list is empty. 
 
 Click the image:images/fb-create-new-app-button.png[] button near the top. A dialog prompts you to name your application.
 
@@ -51,7 +51,7 @@ image::images/fb-new-app-form.png[]
 
 You can name your application almost anything, although Facebook does apply a few rules. For example, the name can't contain the words "Face" or "Book".
 
-You are asked to supply an App Namespace. You use the App Namespace to define custom Open Graph actions and as part of the application's Facebook URL (http://apps.facebook.com/{App_Namespace}). Make sure the App Namespace is longer than 7 characters, contains no capital letters, and is unique among all applications on Facebook. Although it's not required, it's also probably a good idea to provide a namespace that is similar to the name you gave to your application.
+You are asked to supply an App Namespace, which is optional. If you supply one, you can later use the App Namespace to define custom Open Graph actions and as part of the application's Facebook URL (http://apps.facebook.com/{App_Namespace}). Make sure the App Namespace is longer than 7 characters, contains no capital letters, and is unique among all applications on Facebook. Although it's not required, it's also probably a good idea to provide a namespace that is similar to the name you gave to your application.
 
 Optionally, you can have Facebook automatically arrange hosting for your application at Heroku.
 
@@ -65,7 +65,7 @@ image::images/fb-app-settings.png[]
 
 From the application settings page, you can configure various details about your application. The choices you make here depend on what kind of application you plan to build and what you want your application to do. 
 
-The main thing to note from the application settings page is the **App ID** and **App Secret** near the top. These values are your application's credentials to Facebook. You need these credentials to do almost anything with Facebook, including going through the OAuth authorization flow and working with Facebook's Graph API.
+The main thing to note from the application settings page is the **App ID** and **App Secret** near the top. These values are your application's credentials to Facebook. You need these credentials to do almost anything with Facebook, including going through the OAuth authorization flow and working with Facebook's Graph API. In Spring Boot they are the `spring.social.facebook.appId` and `spring.social.facebook.appSecret` respecytively.
 
 == Verify the registration
 One way you can use your newly registered application's App ID and App Secret is to use them in an application that retrieves information about itself. The sample utility application in GitHub fetches information about a registered application and displays it on the console.
@@ -77,7 +77,7 @@ Clone the utility project from GitHub:
 $ git clone https://github.com/spring-guides/{project_id}.git
 ----
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master//run_the_utility.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/run_the_utility.adoc[]
 
 A dialog prompts you for the application's App ID, followed by a dialog that asks for the App Secret. Copy and paste them from the Facebook Developer's site.
 
