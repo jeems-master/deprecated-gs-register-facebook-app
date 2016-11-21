@@ -67,7 +67,7 @@ image::images/fb-app-settings.png[]
 
 From the application settings page, you can configure various details about your application. The choices you make here depend on what kind of application you plan to build and what you want your application to do. 
 
-The main thing to note from the application settings page is the **App ID** and **App Secret** near the top. These values are your application's credentials to Facebook. You need these credentials to do almost anything with Facebook, including going through the OAuth authorization flow and working with Facebook's Graph API. In Spring Boot they are the `spring.social.facebook.appId` and `spring.social.facebook.appSecret` respecytively.
+The main thing to note from the application settings page is the **App ID** and **App Secret** near the top. These values are your application's credentials to Facebook. You need these credentials to do almost anything with Facebook, including going through the OAuth authorization flow and working with Facebook's Graph API. In Spring Boot they are the `spring.social.facebook.appId` and `spring.social.facebook.appSecret` respectively.
 
 == Verify the registration
 One way you can use your newly registered application's App ID and App Secret is to use them in an application that retrieves information about itself. The sample utility application in GitHub fetches information about a registered application and displays it on the console.
